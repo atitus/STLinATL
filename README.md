@@ -6,7 +6,9 @@
 
 ## Google Colaboratory
 
-To run notebooks, 
+To run notebooks, you will need a Google account. You may need to install the Google Colaboratory (colab) app as shown below.
+
+![](install-colab.gif)
 
 ## Workshop 1: Integrating computational modeling into applied math and science
 
