@@ -1,0 +1,112 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://s3.amazonaws.com/glowscript/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://s3.amazonaws.com/glowscript/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://s3.amazonaws.com/glowscript/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/glowscript/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/glowscript/package/glow.3.0.min.js"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/glowscript/package/RSrun.3.0.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var RS_modules = {};
+RS_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = RS_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var RS_Iter0 = string_funcs;
+        RS_Iter0 = ((typeof RS_Iter0[Symbol.iterator] === "function") ? (RS_Iter0 instanceof Map ? RS_Iter0.keys() : RS_Iter0) : Object.keys(RS_Iter0));
+        for (var RS_Index0 of RS_Iter0) {
+            name = RS_Index0;
+            (RS_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? RS_expr_temp.length + name : name] = (RS_expr_temp = RS_str.prototype)[(typeof name === "number" && name < 0) ? RS_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    RS_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+
+    var version, display, vector, print, arange, __name__, type, scene, RS_ls, G, giant, dwarf, dt, r, F;
+    version = RS_list_decorate([ "3.0", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    display = canvas;
+    vector = vec;
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    scene = canvas();
+    var strings = RS_modules.pythonize.strings;
+
+    strings();
+    "7";
+    scene.caption = "In GlowScript programs:\nTo rotate \"camera\", drag with right button or Ctrl-drag.\nTo zoom, drag with middle button or Alt/Option depressed, or use scroll wheel.\n  On a two-button mouse, middle is left + right.\nTo pan left/right and up/down, Shift-drag.\nTouch screen: pinch/extend to zoom, swipe or two-finger rotate.";
+    "8";
+    scene.forward = vector(0, .3["-u"](), 1["-u"]());
+    "10";
+    G = 6.7e-11;
+    "12";
+    giant = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1e11["-u"](), 0, 0), radius: 2e10, color: color.red, make_trail: true, trail_type: "points", interval: 10, retain: 50})]);
+    "14";
+    giant.mass = 2e30;
+    "15";
+    giant.p = vector(0, 0, 1e4["-u"]())["*"](giant.mass);
+    "17";
+    dwarf = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(15e10, 0, 0), radius: 1e10, color: color.yellow, make_trail: true, interval: 10, retain: 50})]);
+    "19";
+    dwarf.mass = 1e30;
+    "20";
+    dwarf.p = giant.p["-u"]();
+    "22";
+    dt = 1e5;
+    "23";
+    while (true) {
+        "24";
+        (await rate(200));
+        "25";
+        r = dwarf.pos["-"](giant.pos);
+        "26";
+        F = G["*"](giant.mass)["*"](dwarf.mass)["*"](r.hat)["/"](GS_power(mag(r), 2));
+        "27";
+        giant.p = giant.p["+"](F["*"](dt));
+        "28";
+        dwarf.p = dwarf.p["-"](F["*"](dt));
+        "29";
+        giant.pos = giant.pos["+"](giant.p["/"](giant.mass)["*"](dt));
+        "30";
+        dwarf.pos = dwarf.pos["+"](dwarf.p["/"](dwarf.mass)["*"](dt));
+    }
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>
