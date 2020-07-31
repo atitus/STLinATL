@@ -13,6 +13,6 @@ Modeling is a significant component of contemporary applied math and science. Co
 3. Population Growth
   - [Model for Unconstrained Growth](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03a-pop-growth/03-01-pop-growth-model-only.ipynb)
   - [Applications](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03a-pop-growth/03-02-pop-growth-hw.ipynb)
-4. Air Resistance
-  - [1D Model for Motion with Drag](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03c-air-drag/03-air-drag-model-only.ipynb)
-  - [Lunar Lander](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03c-air-drag/03-lunar-lander.ipynb)
+4. Motion
+  - [1D Model for Motion with Drag](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03c-motion/03-air-drag-model-only.ipynb)
+  - [Lunar Lander](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03c-motion/03-lunar-lander.ipynb)
