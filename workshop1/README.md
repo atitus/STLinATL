@@ -11,5 +11,8 @@ Modeling is a significant component of contemporary applied math and science. Co
 1. [Introduction](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/01-introduction/01-introduction.ipynb)
 2. [Python as a Calculator](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/02-python-calc/02-python-calculator.ipynb)
 3. Population Growth
-  1. [Model for Unconstrained Growth](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03a-pop-growth/03-01-pop-growth-model-only.ipynb)
-  2. [Applications](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03a-pop-growth/03-02-pop-growth-hw.ipynb)
+  - [Model for Unconstrained Growth](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03a-pop-growth/03-01-pop-growth-model-only.ipynb)
+  - [Applications](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03a-pop-growth/03-02-pop-growth-hw.ipynb)
+4. Air Resistance
+  - [1D Model for Motion with Drag](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03c-air-drag/03-air-drag-model-only.ipynb)
+  - [Lunar Lander](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop1/03c-air-drag/03-lunar-lander.ipynb)
