@@ -14,8 +14,9 @@ We have moved from the information age into the data analytics age. Data-driven 
 3. [Plot data](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/03-plot-data/03-plot-data.ipynb)
 4. [Plot algebraic functions](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/04-plot-functions/04-plot-functions.ipynb)
 5. Curve Fitting
-   - [Fitting a polynomial](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/05-curve-fitting/05-curve-fitting-part1.ipynb)
-   - [Fitting a general function](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/05-curve-fitting/05-curve-fitting-part1.ipynb)   
+   - [Quick Linear Fit](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/05-curve-fitting/05-curve-fitting-part1.ipynb)
+   - [Fitting a polynomial](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/05-curve-fitting/05-curve-fitting-part2.ipynb)
+   - [Fitting a general function](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/05-curve-fitting/05-curve-fitting-part3.ipynb)   
 6. Applications
   - [Allometry](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/06-applications/allometry.ipynb)
   - [Gaussian Distribution](https://colab.research.google.com/github/atitus/STLinATL/blob/master/workshop2/06-applications/gaussian.ipynb)
